@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Network and Cloud Engineering portfolio covering enterprise networking, security, AWS and automation.">
+  <title>Rohan Jamadade | Network & Cloud Engineer</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0b1020;
+      --panel: #121a2e;
+      --text: #eef2ff;
+      --muted: #a5b1cc;
+      --accent: #67e8f9;
+      --border: #283550;
+    }
+
+    * { box-sizing: border-box; }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      font-family: system-ui, -apple-system, sans-serif;
+      line-height: 1.7;
+    }
+
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      width: min(1060px, 90%);
+      margin: auto;
+    }
+
+    header {
+      border-bottom: 1px solid var(--border);
+      padding: 18px 0;
+    }
+
+    nav {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-items: center;
+      gap: 16px;
+    }
+
+    .brand { font-weight: 800; color: var(--text); }
+
+    .nav-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 18px;
+    }
+
+    .hero { padding: 90px 0 70px; }
+
+    .eyebrow {
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      font-size: 0.8rem;
+      font-weight: 700;
+    }
+
+    h1 {
+      font-size: clamp(2.3rem, 7vw, 4.6rem);
+      line-height: 1.1;
+      margin: 18px 0;
+      letter-spacing: -2px;
+    }
+
+    h2 { font-size: 1.8rem; }
+    .intro { max-width: 720px; color: var(--muted); font-size: 1.1rem; }
+
+    .actions {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 28px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 11px 18px;
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      font-weight: 700;
+    }
+
+    .primary { background: var(--accent); color: #07111d; }
+
+    section { padding: 38px 0; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      background: var(--panel);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 22px;
+    }
+
+    .card p, .muted { color: var(--muted); }
+    .tag { color: var(--accent); font-size: 0.85rem; }
+
+    footer {
+      margin-top: 45px;
+      padding: 28px 0;
+      border-top: 1px solid var(--border);
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+
+    :focus-visible {
+      outline: 2px solid var(--accent);
+      outline-offset: 4px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav class="container" aria-label="Main navigation">
+      <a class="brand" href="#">RJ / ENGINEERING</a>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container">
+      <div class="eyebrow">Network Engineering · Cloud · Security</div>
+      <h1>Building reliable networks.<br>Connecting to the cloud.</h1>
+      <p class="intro">
+        I'm Rohan Jamadade, a Network Engineer focused on enterprise
+        infrastructure, routing and switching, network security, AWS
+        networking and automation.
+      </p>
+      <div class="actions">
+        <a class="button primary" href="#projects">Explore my projects</a>
+        <a class="button" href="https://github.com/rohanjamadade">
+          GitHub profile
+        </a>
+      </div>
+    </section>
+
+    <section class="container" id="about">
+      <h2>About me</h2>
+      <p class="muted">
+        I work with enterprise networking concepts and infrastructure
+        operations, and I'm developing practical labs and documentation
+        to deepen my cloud and network automation skills.
+      </p>
+    </section>
+
+    <section class="container" id="skills">
+      <h2>Technical focus</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Enterprise Networking</h3>
+          <p>VLANs, trunking, STP, inter-VLAN routing, DHCP, DNS and TCP/IP.</p>
+          <span class="tag">Cisco · LAN · Troubleshooting</span>
+        </article>
+        <article class="card">
+          <h3>Network Security</h3>
+          <p>Firewall policy concepts, NAT, VPN fundamentals and secure access.</p>
+          <span class="tag">Security · Operations</span>
+        </article>
+        <article class="card">
+          <h3>AWS & Cloud Networking</h3>
+          <p>VPC architecture, subnets, route tables and cloud connectivity.</p>
+          <span class="tag">AWS · Cloud Infrastructure</span>
+        </article>
+        <article class="card">
+          <h3>Network Automation</h3>
+          <p>Building skills in Python, device inventory and configuration backups.</p>
+          <span class="tag">Python · Automation</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="projects">
+      <h2>Featured projects</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>Enterprise Network Lab</h3>
+          <p>A Cisco lab covering switching, VLAN segmentation and planned
+             Layer 3 connectivity. Implementation and verification status
+             will be documented transparently.</p>
+          <a href="https://github.com/rohanjamadade/enterprise-network-lab">
+            View repository →
+          </a>
+        </article>
+        <article class="card">
+          <h3>AWS Cloud Networking</h3>
+          <p>A planned project for documenting VPC design, subnetting,
+             routing and cloud security controls.</p>
+          <span class="tag">Planned</span>
+        </article>
+        <article class="card">
+          <h3>Network Automation</h3>
+          <p>A planned project for Python-based inventory and read-only
+             configuration collection.</p>
+          <span class="tag">Planned</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="container" id="contact">
+      <h2>Let's connect</h2>
+      <p class="muted">
+        Explore my technical work and connect with me through GitHub.
+      </p>
+      <a class="button" href="https://github.com/rohanjamadade">
+        Visit my GitHub profile
+      </a>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      © 2026 Rohan Jamadade · Network & Cloud Engineering Portfolio
+    </div>
+  </footer>
+</body>
+</html>
